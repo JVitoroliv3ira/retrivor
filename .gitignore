@@ -1,0 +1,37 @@
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+
+# Arquivos temporários
+**/*.log
+**/*.tmp
+**/*.swp
+**/*.bak
+**/.DS_Store
+
+# Ambientes virtuais
+.venv/
+**/.venv/
+
+# Poetry
+*.lock
+*.egg-info/
+dist/
+build/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Variáveis de ambiente
+.env
+.env.*
+
+# Tox
+.tox/
