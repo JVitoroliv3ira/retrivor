@@ -1,17 +1,23 @@
 [project]
 name = "retrivor-cli"
 version = "0.1.0"
-description = ""
+description = "CLI para indexação de repositórios em ChromaDB"
 authors = [
-    {name = "João Vitor de Oliveira Santos",email = "jvitor2000@outlook.com"}
+    {name = "João Vitor de Oliveira Santos", email = "jvitor2000@outlook.com"}
 ]
 license = {text = "GPL-3.0-or-later"}
 readme = "README.md"
-requires-python = ">=3.8"
-dependencies = [
-    "typer[all] (>=0.15.3,<0.16.0)"
-]
+requires-python = ">=3.9,<4.0"
 
+dependencies = [
+    "typer[all]>=0.15.3,<0.16.0",
+    "langchain>=0.1.0",
+    "chromadb>=0.4.22",
+    "openai>=1.0.0",
+    "langchain-community (>=0.3.23,<0.4.0)",
+    "langchain-openai (>=0.3.14,<0.4.0)",
+    "langchain-chroma (>=0.2.3,<0.3.0)"
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
@@ -19,4 +25,3 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
-
